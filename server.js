@@ -2,17 +2,18 @@
 // DEPENDENCIES
 // ==============================================================================
 
-var express = require("express");
-var cheerio = require("cheerio");
-var axios = require("axios");
+const express = require("express");
+const cheerio = require("cheerio");
+const axios = require("axios");
+
 
 // ==============================================================================
 // EXPRESS AND MIDDLEWARE CONFIGURATION
 // ==============================================================================
 
-var app = express();
+const app = express();
 
-var PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -55,8 +56,8 @@ app.get("/scrape", function (req, res) {
                 date: date
             })
             console.log(result)
-            res.json(result)
         });
+        res.json(result)
     });
 });
 
