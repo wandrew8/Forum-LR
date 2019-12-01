@@ -1,0 +1,48 @@
+/* BODY AND GENERAL STYLING */
+
+/* HEADER AND NAVBAR */
+
+.background {
+    height: 180vh;
+    background: linear-gradient(#95afc0, #c7ecee);
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #888;
+    position: relative;
+    transition: all 0.5s;
+    font-size: 1.6em;
+    margin: 0px, 20px;
+    height: 100%;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-link::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-bottom: solid 3px #ddd;
+    bottom: 0px;
+    width: 0%;
+    left: 50%;
+    margin: 0 auto;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    border-bottom: solid 3px #000;
+    width: 100%;
+    left: 0%;
+}
+
+.nav-link.two::before {
+    left: 0%;
+}
+
+/* BLOG CARD STYLING */
