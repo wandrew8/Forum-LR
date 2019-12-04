@@ -1,5 +1,10 @@
 /* BODY AND GENERAL STYLING */
 
+.row, .container-fluid {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+
 /* HEADER AND NAVBAR */
 
 .background {
@@ -13,8 +18,8 @@
     color: #888;
     position: relative;
     transition: all 0.5s;
-    font-size: 1.6em;
-    margin: 0px, 20px;
+    font-size: 1.5rem;
+    margin: 0px, 2rem;
     height: 100%;
 }
 
@@ -36,7 +41,7 @@
 }
 
 .nav-link:hover::before {
-    border-bottom: solid 3px #000;
+    border-bottom: solid 2px #11697c;
     width: 100%;
     left: 0%;
 }
@@ -45,33 +50,19 @@
     left: 0%;
 }
 
-/* BLOG CARD STYLING */
-
-.card-title {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-}
-
-#blog-container {
-    margin-top: 6rem;
+.navbar-brand img {
+    display: inline;
 }
 
 /* INDEX MAIN CONTENT */
 
-/*--- Bootstrap Mobile Gutter Fix --*/
-
-.row, .container-fluid {
-    margin-left: 0px!important;
-    margin-right: 0px!important;
+.home-photos {
+    margin: 1rem auto 0rem auto;
 }
 
-/*--- Fix for Fixed Navbar jumping on scroll --*/
-
-/* .fixed-top {
-    -webkit-backface-visibility: hidden;
-} */
-
-/*--- Fixed Landing Page Section --*/
+.card img {
+    max-width: 300px;
+}
 
 .landing {
     position: relative;
@@ -162,48 +153,15 @@ body {
     padding-bottom: 1rem;
 }
 
-.caption h2 {
-    display: none;
-}
-
-.caption h3 {
-    font-size: 2rem;
-    text-shadow: .1rem .1rem .5rem #000000;
-    padding-bottom: 1.6rem;
-}
-
-.btn-lg {
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    margin: 0 2%;
-}
-
 .jumbotron {
     margin-bottom: 0;
-}
-
-.about-info {
-    background: rgba(161, 161, 161, 1);
-    background: -moz-linear-gradient(left, rgba(161, 161, 161, 1) 0%, rgba(110, 110, 110, 1) 25%, rgba(189, 189, 189, 1) 66%, rgba(140, 140, 140, 1) 90%, rgba(140, 140, 140, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(161, 161, 161, 1)), color-stop(25%, rgba(110, 110, 110, 1)), color-stop(66%, rgba(189, 189, 189, 1)), color-stop(90%, rgba(140, 140, 140, 1)), color-stop(100%, rgba(140, 140, 140, 1)));
-    background: -webkit-linear-gradient(left, rgba(161, 161, 161, 1) 0%, rgba(110, 110, 110, 1) 25%, rgba(189, 189, 189, 1) 66%, rgba(140, 140, 140, 1) 90%, rgba(140, 140, 140, 1) 100%);
-    background: -o-linear-gradient(left, rgba(161, 161, 161, 1) 0%, rgba(110, 110, 110, 1) 25%, rgba(189, 189, 189, 1) 66%, rgba(140, 140, 140, 1) 90%, rgba(140, 140, 140, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(161, 161, 161, 1) 0%, rgba(110, 110, 110, 1) 25%, rgba(189, 189, 189, 1) 66%, rgba(140, 140, 140, 1) 90%, rgba(140, 140, 140, 1) 100%);
-    background: linear-gradient(to right, rgba(161, 161, 161, 1) 0%, rgba(110, 110, 110, 1) 25%, rgba(189, 189, 189, 1) 66%, rgba(140, 140, 140, 1) 90%, rgba(140, 140, 140, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1a1a1', endColorstr='#8c8c8c', GradientType=1);
-    padding: 6rem 2rem 5rem 2rem;
-    border-radius: 0;
-}
-
-.dark {
-    color: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .contact-info {
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 6rem 2rem 0 2rem;
+    padding: 9rem 2rem 0 2rem;
+    height: 100vh;
 }
 
 .fixed-background h3 {
@@ -219,12 +177,21 @@ h3.heading {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.9rem;
+    color: #11697c;
+}
+
+h3.heading-footer {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+    color: #fff;
 }
 
 .heading-underline {
     width: 3rem;
     height: .2rem;
-    background-color: #FFA92C;
+    background-color: #11697c;
     margin: 0 auto 2rem;
 }
 
@@ -270,51 +237,87 @@ body {
     background-color: pink;
 }
 
+/* SEARCH PAGE */
+
+/* CARD STYLING */
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+#blog-container {
+    margin-top: 6rem;
+}
+
+.blog-card:hover {
+    transform: translateY(1.5rem);
+    transition: 0.5s ease-in-out;
+    /* animation: 2s ease forwards 0.9s; */
+}
+
+.company-card:hover {
+    transform: translateY(-1.5rem);
+    transition: 0.5s ease-in-out;
+}
+
+.tag {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    padding: 0.25rem .5rem 0.25rem .75rem;
+    background: #11697c;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: .05rem;
+    width: 100%;
+}
+
+.tag:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+
+.card-body {
+    margin-top: 1rem;
+}
+
+.card-rule {
+    border-top: 1px solid #11697c;
+}
+
+.btn-primary {
+    background-color: #11697c!important
+}
+
+/* CARD SCROLL EFFECT STYLING */
+
+.come-in {
+    transform: translateY(200px);
+    animation: come-in 1.5s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 767px) {
-    .home-inner {
-        width: 100wh;
-        height: 100vh;
-        color: #fff;
-        background: linear-gradient(-45deg, #ff9e2e, #d35400, #cd6133, #cc8e35, #b33939);
-        background-size: 1000% 400%;
-        -webkit-animation: Gradient 15s ease infinite;
-        -moz-animation: Gradient 15s ease infinite;
-        animation: Gradient 15s ease infinite;
-        font-family: 'Lato', sans-serif;
-    }
-    @-webkit-keyframes Gradient {
-        0% {
-            background-position: 0% 50%
-        }
-        50% {
-            background-position: 100% 50%
-        }
-        100% {
-            background-position: 0% 50%
-        }
-    }
-    @-moz-keyframes Gradient {
-        0% {
-            background-position: 0% 50%
-        }
-        50% {
-            background-position: 100% 50%
-        }
-        100% {
-            background-position: 0% 50%
-        }
-    }
-    @keyframes Gradient {
-        0% {
-            background-position: 0% 50%
-        }
-        50% {
-            background-position: 100% 50%
-        }
-        100% {
-            background-position: 0% 50%
-        }
-    }
     .caption h1 {
         display: none;
     }
@@ -331,18 +334,5 @@ body {
         padding-top: 2rem;
         padding-bottom: 1.6rem;
         text-shadow: none;
-    }
-    .btn-lg {
-        padding: .6rem 1.2rem;
-        font-size: 1.2rem;
-        border-radius: 0.2rem;
-        margin: 0 2%;
-    }
-    .about-info {
-        background: #808080;
-    }
-    .fixed {
-        background-image: url("../images/church.jpg");
-        z-index: -1;
     }
 }

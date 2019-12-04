@@ -1,6 +1,8 @@
-$(document).ready(function () {
+// To initialize AOS animations
+AOS.init();
 
-    $(document).on("click", function () {
+// Scrapes blog posts from "Ambassadors for a better world" website on page load
+$(document).ready(function () {
 
         $.ajax({
             method: "GET",
@@ -10,7 +12,7 @@ $(document).ready(function () {
             console.log("this is working")
             displayCards(result)
         })
-    });
+
 });
 
 function displayCards(result) {
@@ -18,12 +20,13 @@ function displayCards(result) {
     let blogContainer = document.getElementById("blog-container");
     for (let i = 0; i < result.length; i++) {
         blogContainer.innerHTML += 
-        `<div class="col-xs-12 col-sm-6 col-lg-4">
-        <div class="card my-3">
+        `<div class="col-12 col-sm-6 col-xl-4">
+        <div data-aos="fade-up"
+        data-aos-duration="1000" class="card blog-card my-3">
             <div class="card-body">
               <h2 class="card-title">${result[i].headline}</h2>
-              <hr>
-              <p class="byline">${result[i].date}</small>
+              <hr class="card-rule">
+              <div class="byline tag">${result[i].date}</div>
                 <p class="card-text">${result[i].summary}</p>
             </div>
           <div class="text-center pb-3">
@@ -34,3 +37,4 @@ function displayCards(result) {
       console.log("This is the " + i + " result: " + result[i])
     }
 }
+

@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Forum: Leadership & Reconciliation</title>
 </head>
@@ -22,11 +23,12 @@
         <!-- HEADER AND NAVBAR -->
         <header>
 
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-                <a class="navbar-brand" href="#">
+            <nav class="navbar fixed-top navbar-expand-xl navbar-dark scrolling-navbar">
+                <a class="navbar-brand" href="index.html">
                     <img src="./images/forum-logo.jpg" width="70" height="auto" alt="">
                 </a>
-                <a class="navbar-brand" href="/"><strong>FORUM: Leadership and Reconciliation</strong></a>
+                <a class="navbar-brand d-none d-sm-block" href="index.html"><strong>FORUM: Leadership and
+                        Reconciliation</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#forumContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,85 +36,116 @@
                 <div class="collapse navbar-collapse" id="forumContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EDI
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://edimiddleeast.forumlr.org/index.php/edi-middle-east">Conferences</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://edimiddleeast.forumlr.org/index.php/about-us">Forum</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://edimiddleeast.forumlr.org/index.php/edi-online-community">Online
+                                    Community</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ROM
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/news.html">News</a>
+                            <a class="nav-link"
+                                href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
+                                target="_blank">Donate</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
-            <div class="view intro-2">
-                <div class="full-bg-img">
-                    <div class="mask rgba-blue-light pattern-1 flex-center">
-                        <div class="container text-center white-text wow fadeInUp">
-                            <h1 class="title">NEWS COLLECTION</h1>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </header>
 
 
         <div class="landing">
             <div class="home-wrap">
-                <div class="home-inner">
-                </div>
+                <div class="home-inner"></div>
             </div>
         </div>
 
-        <div class="caption text-center">
-            <h1>Community Cuisine</h1>
-            <h2>Olaf<i class="fas fa-carrot"></i></h2>
-            <h3>Sign Up for Olaf</h3>
-            <a href="/signup/chef" class="btn btn-outline-light btn-lg">Chef</a>
-
-            <a href="/signup/user" class="btn btn-outline-light btn-lg">User</a>
+        <div class="caption">
+            <h1>FORUM:</h1>
+            <h1>Leadership and Reconciliation</h1>
         </div>
 
         <div id="about" class="about">
 
-            <div class="row dark text-center jumbotron about-info">
+            <div class="row text-white text-center jumbotron">
 
                 <div class="col-12">
-                    <h3 class="heading">Better for People and the Planet</h3>
+                    <h3 class="heading">AMBASSADORS FOR A BETTER WORLD</h3>
                     <div class="heading-underline"></div>
                 </div>
 
                 <div class="col-md-4">
-                    <h3>Community</h3>
-                    <div class="feature">
-                        <i class="fas fa-people-carry fa-3x"></i>
+                    <div data-aos="fade-up-right" data-aos-duration="1000" class="card module company-card my-3">
+                        <img class="card-img-top home-photos" src="./images/ROM-logo.png" alt="Renewing Our Minds">
+                        <div class="card-body">
+                            <h2 class="card-title">Renewing Our Minds</h2>
+                            <hr>
+                            <p class="card-text">The Renewing Our Minds Gathering (ROM) has been a defining and life
+                                changing experience for hundreds of young participants from over 50 countries. Many
+                                alumni have emerged as leaders of influence and are today making a difference in the
+                                political, social and humanitarian and religious arenas of their countries.</p>
+                        </div>
                     </div>
-                    <p class="feature-text">Showcase your talents as an Olaf Chef by providing the community the
-                        opportunity to experience the taste of your authentic cuisine.</p><br />
                 </div>
 
                 <div class="col-md-4">
-                    <h3>Health</h3>
-                    <div class="feature">
-                        <i class="fas fa-heart fa-3x"></i>
+                    <div data-aos="fade-up" data-aos-duration="1000" class="card module company-card my-3">
+                        <img class="card-img-top home-photos" src="./images/ROM-logo.png"
+                            alt="Economic Deplomacy and Integrity">
+                        <div class="card-body">
+                            <h2 class="card-title">Economic Deplomacy and Integrity</h2>
+                            <hr>
+                            <p class="card-text">Economic Diplomacy and Integrity (EDI) is designed to support
+                                professionals and students in the areas of economics, business and politics. We believe
+                                that the best way to fight against unhealthy rivalry among and within nations is to
+                                establish an economic and plitical community based on Jesus's life and principals.</p>
+                        </div>
                     </div>
-                    <p class="feature-text">Discover healthy, home cooked meals, without the costly expenses or
-                        preparation, while gaining more time to spend doing what you love.</p><br />
                 </div>
 
                 <div class="col-md-4">
-                    <h3>Environment</h3>
-                    <div class="feature">
-                        <i class="fas fa-globe-americas fa-3x"></i>
+                    <div data-aos="fade-up-left" data-aos-duration="1000" class="card module company-card my-3">
+                        <img class="card-img-top home-photos" src="./images/ROM-logo.png"
+                            alt="Forum Integration Conference">
+                        <div class="card-body">
+                            <h2 class="card-title">Forum Integration Conference</h2>
+                            <hr>
+                            <p class="card-text">Some text will be added here, it will describe the Integration
+                                Conference, it's aims and goals but also provide the reader with enough details to know,
+                                how these goals are achieved and from this they would be able to conclude the purpose
+                                and means how this conference is acomplished... Coming soon...</p>
+                        </div>
                     </div>
-                    <p class="feature-text">Utilizing locally sourced and sustainable ingredients, Olaf Chefs don't
-                        produce unnecessary waste, unlike the big restaurant chains.</p><br />
                 </div>
 
             </div>
@@ -123,31 +156,29 @@
 
             <div class="fixed-background">
 
-                <div class="row dark justify-content-center contact-info">
+                <div class="row text-white justify-content-center contact-info">
 
                     <div class="col-md-5 text-center">
 
                         <div class="col-12">
-                            <h3 class="heading">Contact Us</h3>
+                            <h3 class="heading-footer">Contact Us</h3>
                             <div class="heading-underline"></div>
                         </div>
 
                         <p>We want to hear from you!<br />
                             If you have any questions, comments, concerns, or would like
-                            additional information on how to become licensed as a Olaf Chef
-                            feel free to contact us using the information provided below.<br />
-                            Our team is ready and willing to help.<br />
-                            Happy Cooking!</p>
+                            additional information feel free to contact us using the information provided below.<br />
+                        </p>
                         <br />
                         <br />
 
-                        <strong>Email: service@olafgo.com</strong><br />
+                        <strong>Email: forum@gmail.com</strong><br />
                         <strong>Phone: (206) 555-5555</strong>
                     </div>
 
 
                     <hr class="socket" />
-                    <div class="copyright">OlafGo &copy; Copyright 2019</div>
+                    <div class="copyright">Forum &copy; Copyright 2019</div>
                 </div>
 
                 <div class="fixed-wrap">
@@ -178,6 +209,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="../server.js"></script>
     <script src="./javascript/app.js"></script>
 </body>
