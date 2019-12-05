@@ -5,19 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Forum: Leadership & Reconciliation</title>
 </head>
 
 <body>
-    <h1>Contact</h1>
 
+    <!-- HEADER AND NAVBAR -->
+    <header>
 
+        <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-inverse scrolling-navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo-transparent2.png" width="70" height="auto" alt="">
+            </a>
+            <a class="navbar-brand d-none d-sm-block" href="index.html"><strong>FORUM: Leadership and
+                    Reconciliation</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#forumContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="forumContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news.html">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EDI
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" target="_blank"
+                                href="https://edimiddleeast.forumlr.org/index.php/edi-middle-east">Conferences</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://edimiddleeast.forumlr.org/index.php/about-us">Forum</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://edimiddleeast.forumlr.org/index.php/edi-online-community">Online
+                                Community</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ROM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
+                            target="_blank">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Jumbotron -->
+    <div class="card card-background card-image">
+        <div class="text-white text-center rgba-stylish-light py-5 px-4">
+            <div class="py-5">
+
+                <!-- Content -->
+                <h5 class="h5 orange-text"><i class="fas fa-camera-retro"></i> Photography</h5>
+                <h2 class="card-title h2 my-4 py-2">Jumbotron with image overlay</h2>
+                <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                    obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima
+                    debitis perferendis vitae cumque et quo impedit.</p>
+                <a class="btn peach-gradient"><i class="fas fa-clone left"></i> View project</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="500" height="600" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Bothell%2C%20WA%2098041%20USA%2C&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://www.divi-discounts.com"></a></div>
+
+    </div>
+
+    <!-- Background Image Parallax -->
+    <div class="jarallax">
+        <img class="jarallax-img" src="<background_image_url_here>" alt="">
+        Your content here...
+    </div>
+
+    <!-- Background Image Parallax with <picture> tag -->
+    <div class="jarallax">
+        <picture class="jarallax-img">
+            <source media="..." srcset="<alternative_background_image_url_here>">
+            <img src="<background_image_url_here>" alt="">
+        </picture>
+        Your content here...
+    </div>
+
+    <!-- Alternate: Background Image Parallax -->
+    <div class="jarallax" style="background-image: url('<background_image_url_here>');">
+        Your content here...
+    </div>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -29,6 +136,17 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+    <!-- Jarallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <!-- Include it if you want to use Video parallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-video.min.js"></script>
+
+    <!-- Include it if you want to parallax any element -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-element.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="../server.js"></script>
+    <script src="./javascript/app.js"></script>
 </body>
 
 </html>
