@@ -5,6 +5,10 @@
     margin-right: 0px!important;
 }
 
+body, h1 {
+    font-family: 'Lato', sans-serif;
+}
+
 /* HEADER AND NAVBAR */
 
 .background {
@@ -224,7 +228,7 @@ h3.heading-footer {
 }
 
 .fixed {
-    background-image: url("../images/church.jpg");
+    background-image: url("../images/bosnia.jpg");
     z-index: -1;
 }
 
@@ -253,7 +257,7 @@ hr.socket {
 }
 
 #blog-container {
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 .blog-card:hover {
@@ -328,18 +332,74 @@ hr.socket {
 
 /* MAP OBJECT */
 
+/* ABOUT ME PAGE */
+
+.title-text {
+    color: #6c757d;
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.board-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: -10px;
+    border-radius: 0.25rem;
+}
+
+.mask {
+    border-radius: 0.25rem;
+}
+
+.board-image-card {
+    width: 100%;
+}
+
+.image-container {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -260px;
+}
+
+.board-card {
+    position: relative;
+    margin-top: 11rem;
+}
+
+.view img {
+    margin: 0rem auto 0rem auto;
+}
+
+.email a {
+    color: black;
+}
+
+/* CONTACT PAGE */
+
+.carousel {
+    height: 50%;
+}
+
 .mapouter {
     position: relative;
     text-align: right;
-    height: 600px;
-    width: 500px;
+    height: 515px;
+    width: 100%;
+    border-radius: 0.25rem;
 }
 
 .gmap_canvas {
     overflow: hidden;
-    background: none !important;
-    height: 600px;
-    width: 500px;
+    /* background: none !important; */
+    height: 515px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0.25rem;
 }
 
 /* MEDIA QUERIES */

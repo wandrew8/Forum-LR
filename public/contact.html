@@ -82,49 +82,90 @@
         </nav>
     </header>
 
-    <!-- Jumbotron -->
-    <div class="card card-background card-image">
-        <div class="text-white text-center rgba-stylish-light py-5 px-4">
-            <div class="py-5">
-
-                <!-- Content -->
-                <h5 class="h5 orange-text"><i class="fas fa-camera-retro"></i> Photography</h5>
-                <h2 class="card-title h2 my-4 py-2">Jumbotron with image overlay</h2>
-                <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-                    obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima
-                    debitis perferendis vitae cumque et quo impedit.</p>
-                <a class="btn peach-gradient"><i class="fas fa-clone left"></i> View project</a>
-
+    <div class="view jarallax" style="height: 50vh;">
+        <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg" alt="">
+        <div class="mask rgba-blue-slight">
+            <div class="container flex-center text-center">
+                <div class="row mt-5">
+                    <div class="col-md-12 col-xl-8 mx-auto wow fadeIn">
+                        <h1 class="display-3 text-white text-uppercase mb-2 wow fadeInDown" data-wow-delay="0.3s">
+                            CONTACT</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="mapouter">
-        <div class="gmap_canvas"><iframe width="500" height="600" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Bothell%2C%20WA%2098041%20USA%2C&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                href="https://www.divi-discounts.com"></a></div>
 
+
+    <div class="container">
+        <div class="row">
+            <p>We want to hear from you!<br />
+                If you have any questions, comments, concerns, or would like
+                additional information feel free to contact us using the information provided below.<br />
+            </p>
+        </div>
+        <div class="row d-flex align-items-center">
+
+            <!-- FORM CONTAINER -->
+            <div class="col-lg-6 py-4">
+                <div class="card">
+                    <h5 class="card-header info-color white-text text-center py-4">
+                        <strong>Have a Question?</strong>
+                    </h5>
+
+                    <form class="text-center p-5" action="#!">
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input type="text" id="defaultRegisterFormFirstName" class="form-control"
+                                    placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <input type="text" id="defaultRegisterFormLastName" class="form-control"
+                                    placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4"
+                            placeholder="E-mail">
+
+                        <!-- Password -->
+                        <input type="text" id="defaultRegisterFormPassword" class="form-control mb-4"
+                            placeholder="Subject" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+                                placeholder="Message"></textarea>
+                        </div>
+
+                        <!-- Sign up button -->
+                        <div class="ml-0">
+                            <button class="btn btn-info ml-0" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- MAP CONTAINER -->
+            <div class="col-lg-6 py-4">
+                <div class="card">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="515" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Bothell%2C%20WA%2098041%20USA%2C&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://www.divi-discounts.com"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Background Image Parallax -->
-    <div class="jarallax">
-        <img class="jarallax-img" src="<background_image_url_here>" alt="">
-        Your content here...
-    </div>
 
-    <!-- Background Image Parallax with <picture> tag -->
-    <div class="jarallax">
-        <picture class="jarallax-img">
-            <source media="..." srcset="<alternative_background_image_url_here>">
-            <img src="<background_image_url_here>" alt="">
-        </picture>
-        Your content here...
-    </div>
-
-    <!-- Alternate: Background Image Parallax -->
-    <div class="jarallax" style="background-image: url('<background_image_url_here>');">
-        Your content here...
-    </div>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
