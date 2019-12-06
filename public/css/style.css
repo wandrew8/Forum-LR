@@ -185,20 +185,9 @@ body {
     margin-top: 1.5rem;
 }
 
-h3.heading {
-    font-size: 1.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1.9rem;
-    color: #236d7c;
-}
-
 h3.heading-footer {
     font-size: 1.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 1.9rem;
-    color: #fff;
 }
 
 .heading-underline {
@@ -208,32 +197,9 @@ h3.heading-footer {
     margin: 0 auto 2rem;
 }
 
-.fa-3x {
-    color: #FFA92C;
-    padding: 1.4rem 0rem;
-}
-
-.feature h3 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    padding-bottom: 1.4rem;
-}
-
-.feature p {
-    font-size: 1rem;
-}
-
-.feature-text {
-    padding: 0rem 15%;
-}
-
 .fixed {
     background-image: url("../images/bosnia.jpg");
     z-index: -1;
-}
-
-.contact {
-    text-shadow: .1rem .1rem .5rem #000000;
 }
 
 hr.socket {
@@ -321,7 +287,6 @@ hr.socket {
 .jarallax>.jarallax-img {
     position: absolute;
     object-fit: cover;
-    /* support for plugin https://github.com/bfred-it/object-fit-images */
     font-family: 'object-fit: cover;';
     top: 0;
     left: 0;
@@ -401,6 +366,14 @@ hr.socket {
     text-align: center;
     border-radius: 0.25rem;
 }
+
+/* ROM PAGE */
+
+.card-text {
+    line-height: 1.5rem;
+}
+
+/* EDI PAGE */
 
 /* MEDIA QUERIES */
 
