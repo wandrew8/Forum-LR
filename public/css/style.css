@@ -74,13 +74,16 @@ address {
     margin-left: 22px;
 }
 
+footer {
+    background-color: #34ace0;
+}
+
 /* INDEX MAIN CONTENT */
 
 .home-photos {
     margin: 1rem auto 0rem auto;
-}
-
-.card img {
+    height: 75px;
+    width: auto;
     max-width: 300px;
 }
 
@@ -198,10 +201,10 @@ h3.heading-footer {
 }
 
 .heading-underline {
-    width: 3rem;
+    width: 10rem;
     height: .2rem;
     background-color: #236d7c;
-    margin: 0 auto 2rem;
+    margin: 2rem auto 2rem auto;
 }
 
 .fixed {
@@ -380,10 +383,19 @@ hr.socket {
     line-height: 1.5rem;
 }
 
+.heading {
+    padding: 3rem 1rem 0rem 1rem;
+}
+
 .message p {
-    padding: 0.25rem 2rem;
+    padding: 0.25rem 0.25rem;
     line-height: 1.7rem;
     text-align: justify;
+}
+
+.image-gallery {
+    margin: 0;
+    padding: 0;
 }
 
 .image-gallery a {
@@ -391,26 +403,58 @@ hr.socket {
     text-align: center;
 }
 
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-gallery img:hover {
+    transform: translateY(0.25rem);
+    transition: 0.2s ease-in-out;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.signature {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem 0rem;
+}
+
+.modal .modal-header {
+    display: none;
+}
+
 /* EDI PAGE */
 
 /* MEDIA QUERIES */
 
-@media (max-width: 767px) {
-    .caption h1 {
-        display: none;
+@media (min-width: 576px) {
+    .signature {
+        margin: 2rem;
     }
-    .caption h2 {
-        display: contents;
-        font-family: 'Pacifico', cursive;
-        text-transform: capitalize;
-        font-size: 4.2rem;
-        letter-spacing: .15rem;
-        padding-bottom: .5rem;
-    }
-    .caption h3 {
-        font-size: 1.4rem;
-        padding-top: 2rem;
-        padding-bottom: 1.6rem;
-        text-shadow: none;
+    .message p {
+        padding: 0.25rem 0.5rem;
     }
 }
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .message p {
+        padding: 0.25rem 2rem;
+    }
+    .image-gallery img {
+        height: 300px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
