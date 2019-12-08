@@ -67,20 +67,33 @@ $(window).scroll(function() {
   }
 });
 
-function getVideos() {
-    $.ajax({
-      url: "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA6wZLmmeTTmwU8mKtb3xg0SpC-GMxcFng&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10",
-
-      // url: "https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=UCvlQuIexbcHyGqaWAlEV9pg&maxResults=10&key=AIzaSyA6wZLmmeTTmwU8mKtb3xg0SpC-GMxcFng",
-      method: "GET"
-    }).then(function (response) {
-      console.log("response", response)
-      var videoId = response.items[0].id.playlistId
-      console.log("videoId", videoId)
-
-     let videoContainer = document.getElementById("videoOutPut");
-      videoContainer.innerHTML += `<iframe width="79%" height="78%" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    })
-  }
-    
+// function getVideos() {
+//     $.ajax({
+//       url: "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA6wZLmmeTTmwU8mKtb3xg0SpC-GMxcFng&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10",
+//       method: "GET"
+//     }).then(function (response) {
+//       console.log("response", response)
+//       let num = 6;
+//       for (let i = 0; i < num; i++) {
+        
+//         var videoID = response.items[i].id.videoId;
+//         var videoImage = response.items[i].snippet.thumbnails.high.url
+        
+//         if (typeof videoID === "undefined") {
+//           i++;
+//           num++;
+//         } else {
+        
+//         console.log("videoId", videoID)
+        
+//         let videoContainer = document.querySelector("#videoContainer");
+        
+//         videoContainer.innerHTML += `<div class="col-md-4 my-3"><a href="https://www.youtube.com/embed/${videoID}" data-toggle="lightbox" data-gallery="videoGallery" class="col-md-4"><img src="${videoImage}" class="img-fluid rounded"></a></div>`;
+//       }
+//     }
+      
+//     })
+//   }
+   
+  
    
