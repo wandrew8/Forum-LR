@@ -1,8 +1,9 @@
-// To initialize AOS animations
-AOS.init();
 
 // Scrapes blog posts from "Ambassadors for a better world" website on page load
 $(document).ready(function () {
+  
+  // To initialize AOS animations
+  AOS.init();
 
         $.ajax({
             method: "GET",
@@ -14,6 +15,13 @@ $(document).ready(function () {
             getVideos();
         })
 
+});
+
+//Lightbox functionality
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+    
 });
 
 function displayCards(result) {
