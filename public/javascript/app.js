@@ -15,8 +15,18 @@ $(document).ready(function () {
             getVideos();
         })
 
-});
+  // Carousel Initiation and Functionality
+        $('.carousel').carousel({
+          interval: false
+        })
 
+        $('#newsCarousel').on('slid.bs.carousel', function () {
+          $("#captionOne").fadeIn(5000)
+          $("#captionTwo").fadeIn(5000)
+          $("#captionThree").fadeIn(5000)
+        })
+});
+      
 //Lightbox functionality
 $(document).on("click", '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
@@ -27,9 +37,9 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
 function displayCards(result) {
     
     let blogContainer = document.getElementById("blog-container");
-    for (let i = 0; i < result.length; i++) {
+    for (let i = 0; i < 9; i++) {
         blogContainer.innerHTML += 
-        `<div class="col-12 col-sm-6 col-xl-4">
+        `<div class="col-12 col-md-6 col-xl-4">
         <div data-aos="fade-up"
         data-aos-duration="1000" class="card blog-card my-3">
             <div class="card-body">
@@ -74,14 +84,14 @@ $(window).scroll(function() {
 //     }).then(function (response) {
 //       console.log("response", response)
 //       let num = 6;
-//       for (let i = 0; i < num; i++) {
+//       for (let i = 0; i < response.items.length; i++) {
         
 //         var videoID = response.items[i].id.videoId;
 //         var videoImage = response.items[i].snippet.thumbnails.high.url
         
 //         if (typeof videoID === "undefined") {
+//           console.log(`video ${i} is undefined`)
 //           i++;
-//           num++;
 //         } else {
         
 //         console.log("videoId", videoID)

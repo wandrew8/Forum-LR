@@ -27,7 +27,6 @@
 
         <!-- HEADER AND NAVBAR -->
         <header>
-
             <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-inverse scrolling-navbar">
                 <a class="navbar-brand" href="index.html">
                     <img src="./images/logo-transparent2.png" width="70" height="auto" alt="">
@@ -55,7 +54,7 @@
                                 EDI
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" target="_blank" href="EDI.html" target="_blank">About</a>
+                                <a class="dropdown-item" href="EDI.html">About</a>
                                 <a class="dropdown-item" target="_blank"
                                     href="https://edimiddleeast.forumlr.org/index.php/edi-middle-east">Conferences</a>
                                 <a class="dropdown-item" target="_blank"
@@ -81,17 +80,44 @@
                             <a class="nav-link" href="/contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
-                                target="_blank">Donate</a>
+                            <a class="nav-link" data-toggle="modal" data-target="#donationModal">Donate</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
+        <!-- DONATION MODAL -->
+        <div class="modal" id="donationModal" tabindex="-1" role="dialog" aria-labelledby="donation" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-white" id="donation">SUPPORT FORUM</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Make a Donation through Our Partner</h4>
+                        <img src="./images/The-Antioch-Partners-logo.png" alt="The Antioch Partners"
+                            class="donationLogo">
+                        <br>
+                        <p class="modal-summary">Your donations help to suppor us by Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quo
+                            sunt quos eos amet ratione nostrum
+                            aspernatur fugit odio voluptatem molestias quas, mollitia labore temporibus soluta sapiente
+                            nihil adipisci neque. Qui.
+                        </p>
+                        <a href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
+                            target="_blank" class="btn text-white">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="view jarallax" style="height: 100vh;">
+
+        <div class="view jarallax" style="height: 50vh;">
             <img class="jarallax-img" src="./images/ocean.jpg" alt="">
             <div class="mask rgba-black-light">
                 <div class="container flex-center text-center">
@@ -212,12 +238,68 @@
 
     </div>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-5">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md"></div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">About Us</h5>
+                    <p>The foundation of the work at FORUM is based on the teachings and example of the
+                        person of Jesus.
+                        Our work is challenging in the breaking down walls and working on solutions.</p>
+                    <h5 class="text-uppercase d-inline-block mr-2 mb-2">Donate</h5>
+                    <a data-toggle="modal" data-target="#donationModal"><i
+                            class="fab fa-gratipay fa-lg white-text fa-2x"></i></a>
+                    <p>Help support Forum by making a donation today.</p>
 
-
-
-
-
-
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md"></div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Have a Question?</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Forum for Leadership and Reconciliation</span>
+                            <address>
+                                PO Box 423 Bothell,<br>
+                                WA 98041 USA
+                            </address>
+                        </li>
+                        <li class="mb-2">
+                            <a href="tel:1-281-5153707"><i class="fas fa-phone mr-2"></i>1-281-515-3707</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="mailto:forumforleadership@gmail.com"><i class="fas fa-envelope mr-2"></i>
+                                <span>forumforleadership@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md "></div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class="mb-5 flex-center">
+                    <a class="fb-ic" target="_blank" href="https://www.facebook.com/pg/forwardindeed/posts/">
+                        <i class="fab fa-facebook-square fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="tw-ic" target="_blank" href="https://www.youtube.com/channel/UCvlQuIexbcHyGqaWAlEV9pg">
+                        <i class="fab fa-youtube-square fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="ins-ic" target="_blank" href="#">
+                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright |
+            <a href="https://mdbootstrap.com/education/bootstrap/"> FORUM</a>
+        </div>
+    </footer>
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

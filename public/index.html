@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -12,7 +13,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+    <!-- Ekko Light Box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <!-- Animation on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Forum: Leadership & Reconciliation</title>
 </head>
@@ -49,7 +54,7 @@
                                 EDI
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" target="_blank" href="EDI.html" target="_blank">About</a>
+                                <a class="dropdown-item" href="EDI.html">About</a>
                                 <a class="dropdown-item" target="_blank"
                                     href="https://edimiddleeast.forumlr.org/index.php/edi-middle-east">Conferences</a>
                                 <a class="dropdown-item" target="_blank"
@@ -87,19 +92,25 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="donation">DONATE</h4>
+                        <h2 class="modal-title text-white" id="donation">SUPPORT FORUM</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sunt quos eos amet ratione nostrum
-                        aspernatur fugit odio voluptatem molestias quas, mollitia labore temporibus soluta sapiente
-                        nihil adipisci neque. Qui.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                        <h4>Make a Donation through Our Partner</h4>
+                        <img src="./images/The-Antioch-Partners-logo.png" alt="The Antioch Partners"
+                            class="donationLogo">
+                        <br>
+                        <p class="modal-summary">Your donations help to suppor us by Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quo
+                            sunt quos eos amet ratione nostrum
+                            aspernatur fugit odio voluptatem molestias quas, mollitia labore temporibus soluta sapiente
+                            nihil adipisci neque. Qui.
+                        </p>
+                        <a href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
+                            target="_blank" class="btn text-white">Donate Now</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +124,7 @@
                     <div class="row mt-5">
                         <div class="hero col-md-12 col-xl-8 mx-auto wow fadeIn">
                             <h1 class="display-3 text-white text-uppercase mb-2 wow fadeInDown" data-wow-delay="0.3s">
-                                Forum: Leadership and Reconciliation</h1>
+                                Forum for Leadership and Reconciliation</h1>
                         </div>
                     </div>
                 </div>
@@ -122,7 +133,7 @@
 
         <div class="container">
 
-            <div class="row mt-5 pt-4">
+            <div class="row mt-3">
                 <div class="col-md-12 text-center">
                     <h1 class="heading">Who Are We?</h1>
                     <div class="heading-underline"></div>
@@ -131,9 +142,8 @@
 
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Forum is an organization Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores
-                        corporis cum vel culpa inventore iusto eligendi, rem quos ut illum facilis cupiditate
-                        distinctio, dolorem ab voluptatem! Modi, quis reiciendis.</p>
+                    <p>Forum is a non-profit organization that supports and creates initiatives empowering and
+                        developing leaders of the new generation </p>
                 </div>
             </div>
 
@@ -202,28 +212,15 @@
                     <a class="text-white" href="mailto:forum@gmail.com">Email: forum@gmail.com</a><br />
                     <a class="text-white" href="tel:1-206-334-3456">Phone: 1-206-555-5555</a>
                 </div>
-
-
                 <hr class="socket" />
                 <div class="copyright">Forum &copy; Copyright 2019</div>
             </div>
-
             <div class="fixed-wrap">
                 <div class="fixed">
                 </div>
             </div>
-
         </div>
-
     </div>
-
-    </div>
-
-
-
-
-
-
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -238,7 +235,11 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
     <!-- Jarallax -->
     <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <!-- Ekko Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <!-- Animation on Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
     <script src="./javascript/app.js"></script>
 </body>
 

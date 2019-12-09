@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -12,7 +13,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+    <!-- Ekko Light Box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <!-- Animation on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Forum: Leadership & Reconciliation</title>
 </head>
@@ -48,6 +53,7 @@
                             EDI
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="EDI.html">About</a>
                             <a class="dropdown-item" target="_blank"
                                 href="https://edimiddleeast.forumlr.org/index.php/edi-middle-east">Conferences</a>
                             <a class="dropdown-item" target="_blank"
@@ -55,6 +61,7 @@
                             <a class="dropdown-item" target="_blank"
                                 href="https://edimiddleeast.forumlr.org/index.php/edi-online-community">Online
                                 Community</a>
+
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -63,28 +70,54 @@
                             ROM
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="ROM.html">About</a>
+                            <a class="dropdown-item" href="https://ambassadorsforabetterworld.com/">Renewing Our
+                                Minds</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
-                            target="_blank">Donate</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#donationModal">Donate</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <!-- DONATION MODAL -->
+    <div class="modal" id="donationModal" tabindex="-1" role="dialog" aria-labelledby="donation" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-white" id="donation">SUPPORT FORUM</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Make a Donation through Our Partner</h4>
+                    <img src="./images/The-Antioch-Partners-logo.png" alt="The Antioch Partners" class="donationLogo">
+                    <br>
+                    <p class="modal-summary">Your donations help to suppor us by Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Quo
+                        sunt quos eos amet ratione nostrum
+                        aspernatur fugit odio voluptatem molestias quas, mollitia labore temporibus soluta sapiente
+                        nihil adipisci neque. Qui.
+                    </p>
+                    <a href="https://secure.qgiv.com/for/TheAntiochPartners/restriction/ProjectSupport/ForumforLeadershipandReconciliation/"
+                        target="_blank" class="btn text-white">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- PARALLAX IMAGE CONTAINER -->
     <div class="view jarallax" style="height: 50vh;">
-        <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg" alt="">
-        <div class="mask rgba-blue-slight">
+        <img class="jarallax-img" src="./images/ocean.jpg" alt="">
+        <div class="mask rgba-black-light">
             <div class="container flex-center text-center">
                 <div class="row mt-5">
                     <div class="col-md-12 col-xl-8 mx-auto wow fadeIn">
@@ -146,8 +179,8 @@
 
     <!-- PARALLAX IMAGE CONTAINER -->
     <div class="view jarallax" style="height: 50vh;">
-        <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg" alt="">
-        <div class="mask rgba-blue-slight">
+        <img class="jarallax-img" src="./images/ocean3.jpg" alt="">
+        <div class="mask rgba-black-light">
             <div class="container flex-center text-center">
                 <div class="row mt-5">
                     <div class="col-md-12 col-xl-8 mx-auto wow fadeIn">
@@ -175,7 +208,7 @@
 
             <!-- CARD ONE -->
             <div class="col-lg-4 col-md-12 mb-4">
-                <div data-aos="fade-up-right" data-aos-duration="1500" class="card mb-4 board-card">
+                <div class="card mb-4 board-card">
                     <div class="view shadow image-container">
                         <img src="./images/Martha.jpg" class="board-image card-img-top">
                         <div class="mask rgba-stylish-slight"></div>
@@ -195,7 +228,7 @@
 
             <!-- CARD TWO -->
             <div class="col-lg-4 col-md-12 mb-4">
-                <div data-aos="fade-up" data-aos-duration="1000" class="card mb-4 board-card">
+                <div class="card mb-4 board-card">
                     <div class="view shadow image-container">
                         <img src="./images/Tihomir.jpg" class="board-image card-img-top">
                         <div class="mask rgba-stylish-slight"></div>
@@ -215,7 +248,7 @@
 
             <!-- CARD THREE -->
             <div class="col-lg-4 col-md-12 mb-4">
-                <div data-aos="fade-up-left" data-aos-duration="1500" class="card mb-4 board-card">
+                <div class="card mb-4 board-card">
                     <div class="view shadow image-container">
                         <img src="./images/Justin.jpg" class="board-image card-img-top">
                         <div class="mask rgba-stylish-slight"></div>
@@ -240,7 +273,7 @@
         <div class="col-0 col-lg"></div>
         <!-- CARD ONE -->
         <div class="col-lg-4 col-md-12 mb-4">
-            <div data-aos="fade-up-right" data-aos-duration="1500" class="card mb-4 board-card">
+            <div class="card mb-4 board-card">
                 <div class="view shadow image-container">
                     <img src="./images/Vanja.jpg" class="board-image card-img-top">
                     <div class="mask rgba-stylish-slight"></div>
@@ -260,7 +293,7 @@
 
         <!-- CARD TWO -->
         <div class="col-lg-4 col-md-12 mb-4">
-            <div data-aos="fade-up-left" data-aos-duration="1500" class="card mb-4 board-card">
+            <div class="card mb-4 board-card">
                 <div class="view shadow image-container">
                     <img src="./images/TomGarren.jpg" class="board-image card-img-top">
                     <div class="mask rgba-stylish-slight"></div>
@@ -292,7 +325,7 @@
         <!-- CARD ONE -->
         <div class="col-0 col-lg"></div>
         <div class="col-lg-4 col-md-12 mb-4">
-            <div data-aos="fade-up-right" data-aos-duration="1500" class="card mb-4 board-card">
+            <div class="card mb-4 board-card">
                 <div class="view shadow image-container">
                     <img src="./images/Martha.jpg" class="board-image card-img-top">
                     <div class="mask rgba-stylish-slight"></div>
@@ -312,7 +345,7 @@
 
         <!-- CARD TWO -->
         <div class="col-lg-4 col-md-12 mb-4">
-            <div data-aos="fade-up-left" data-aos-duration="1500" class="card mb-4 board-card">
+            <div class="card mb-4 board-card">
                 <div class="view shadow image-container">
                     <img src="./images/Martha.jpg" class="board-image card-img-top">
                     <div class="mask rgba-stylish-slight"></div>
@@ -414,8 +447,8 @@
 
     <!-- PARALLAX IMAGE CONTAINER -->
     <div class="view jarallax" style="height: 25vh;">
-        <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg" alt="">
-        <div class="mask rgba-blue-slight">
+        <img class="jarallax-img" src="./images/ocean3.jpg" alt="">
+        <div class="mask rgba-black-slight">
         </div>
     </div>
 
@@ -430,6 +463,11 @@
                     <p>The foundation of the work at FORUM is based on the teachings and example of the
                         person of Jesus.
                         Our work is challenging in the breaking down walls and working on solutions.</p>
+                    <h5 class="text-uppercase d-inline-block mr-2 mb-2">Donate</h5>
+                    <a data-toggle="modal" data-target="#donationModal"><i
+                            class="fab fa-gratipay fa-lg white-text fa-2x"></i></a>
+                    <p>Help support Forum by making a donation today.</p>
+
                 </div>
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md"></div>
@@ -461,23 +499,14 @@
         <div class="row">
             <div class="col-md-12 py-5">
                 <div class="mb-5 flex-center">
-                    <a class="fb-ic">
-                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    <a class="fb-ic" target="_blank" href="https://www.facebook.com/pg/forwardindeed/posts/">
+                        <i class="fab fa-facebook-square fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                     </a>
-                    <a class="tw-ic">
-                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    <a class="tw-ic" target="_blank" href="https://www.youtube.com/channel/UCvlQuIexbcHyGqaWAlEV9pg">
+                        <i class="fab fa-youtube-square fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                     </a>
-                    <a class="gplus-ic">
-                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="li-ic">
-                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="ins-ic">
+                    <a class="ins-ic" target="_blank" href="#">
                         <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="pin-ic">
-                        <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
                     </a>
                 </div>
             </div>
