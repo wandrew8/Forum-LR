@@ -272,6 +272,11 @@ hr.socket {
     background-color: #0083a7;
 }
 
+.contact {
+    border: solid 2px #0083a7;
+    height: 100px;
+}
+
 .jarallax {
     position: relative;
     z-index: 0;
