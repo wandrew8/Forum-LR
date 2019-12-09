@@ -151,38 +151,38 @@
                         Have a Question?
                     </h3>
 
-                    <form class="text-center p-5" action="#!">
+                    <form id="contact-form" action="https://formspree.io/xoqvybdz" method="POST"
+                        class="text-center p-5">
                         <div class="form-row mb-4">
                             <div class="col">
                                 <!-- First name -->
-                                <input type="text" id="defaultRegisterFormFirstName" class="form-control"
+                                <input type="text" id="firstName" name="firstName" class="form-control"
                                     placeholder="First name">
                             </div>
                             <div class="col">
                                 <!-- Last name -->
-                                <input type="text" id="defaultRegisterFormLastName" class="form-control"
+                                <input type="text" id="lastName" name="lastName" class="form-control"
                                     placeholder="Last name">
                             </div>
                         </div>
 
                         <!-- E-mail -->
-                        <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4"
-                            placeholder="E-mail">
+                        <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail">
 
-                        <!-- Password -->
-                        <input type="text" id="defaultRegisterFormPassword" class="form-control mb-4"
-                            placeholder="Subject" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                        <!-- Subject -->
+                        <input type="text" id="subject" name="subject" class="form-control mb-4" placeholder="Subject"
+                            aria-describedby="defaultRegisterFormPasswordHelpBlock">
 
 
                         <!-- Message -->
                         <div class="form-group">
-                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+                            <textarea class="form-control rounded-0" name="message" id="message" rows="3"
                                 placeholder="Message"></textarea>
                         </div>
 
                         <!-- Sign up button -->
                         <div class="ml-0">
-                            <button class="btn text-white ml-0" type="submit">Send Message</button>
+                            <button class="btn text-white ml-0" type="submit" value="Send">Send Message</button>
                         </div>
                     </form>
                 </div>
