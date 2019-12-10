@@ -15,7 +15,6 @@ require('dotenv').config();
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const ApiKey = process.env.API_KEY;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -71,11 +70,9 @@ app.get("/videos", function (req, res) {
     
     axios.get(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10`).then(function (response) {
         console.log(response.data)
-        
         res.json(response.data)
     });
 });
-
 
 
 // =============================================================================

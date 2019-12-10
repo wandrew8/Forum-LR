@@ -19,7 +19,7 @@ $(document).ready(function () {
           url: "/videos",
       }).done(function (result) {
           console.log(result)
-          console.log("vidoe data is being collected")
+          console.log("video data is being collected")
           displayVideos(result);
       })
 

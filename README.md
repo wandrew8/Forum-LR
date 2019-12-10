@@ -5,3 +5,6 @@ Forum: Leadership and Reconciliation is a company website created for a client t
 ## Tech Used 
 * AOS (Animations on Scroll) Library for card animations
 * 
+
+
+You can check out the deplyed site [here](https://forumlr.herokuapp.com/)
