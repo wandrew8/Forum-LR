@@ -12,8 +12,16 @@ $(document).ready(function () {
             console.log(result)
             console.log("this is working")
             displayCards(result)
-            getVideos();
         })
+
+        $.ajax({
+          method: "GET",
+          url: "/videos",
+      }).done(function (result) {
+          console.log(result)
+          console.log("vidoe data is being collected")
+          displayVideos(result);
+      })
 
   // Carousel Initiation and Functionality
         $('.carousel').carousel({
@@ -48,7 +56,6 @@ function displayCards(result) {
           </div>
         </div>
       </div>`
-      console.log("This is the " + i + " result: " + result[i])
     }
 }
 
@@ -71,34 +78,29 @@ $(window).scroll(function() {
   }
 });
 
-//  function getVideos() {
-//      $.ajax({
-//        url: "https://www.googleapis.com/youtube/v3/search?key=AIzaSyB7qkBpEzj9VEipRZxAxu-JIgMsqgN8evc&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10",
-//        method: "GET"
-//      }).then(function (response) {
-//        console.log("response", response)
-//        let num = 6;
-//        for (let i = 0; i < response.items.length; i++) {
+ function displayVideos(result) {
+    
+        for (let i = 0; i < result.items.length; i++) {
         
-//          var videoID = response.items[i].id.videoId;
-//          var videoImage = response.items[i].snippet.thumbnails.high.url
-//          var description = response.items[i].snippet.title.toUpperCase();
+         var videoID = result.items[i].id.videoId;
+         var videoImage = result.items[i].snippet.thumbnails.high.url
+         var description = result.items[i].snippet.title.toUpperCase();
         
-//          if (typeof videoID === "undefined") {
-//            console.log(`video ${i} is undefined`)
-//            i++;
-//          } else {
+         if (typeof videoID === "undefined") {
+           console.log(`video ${i} is undefined`)
+           i++;
+         } else {
         
-//          console.log("videoId", videoID)
+         console.log("videoId", videoID)
         
-//          let videoContainer = document.querySelector("#videoContainer");
+         let videoContainer = document.querySelector("#videoContainer");
         
-//          videoContainer.innerHTML += `<a href="https://www.youtube.com/embed/${videoID}" data-toggle="lightbox" data-gallery="videoGallery" class="col-md-4"><img src="${videoImage}" class="img-fluid rounded"><p class="video-caption">${description}</p></a>`;
-//        }
-//      }
+         videoContainer.innerHTML += `<a href="https://www.youtube.com/embed/${videoID}" data-toggle="lightbox" data-gallery="videoGallery" class="col-md-4"><img src="${videoImage}" class="img-fluid rounded"><p class="video-caption">${description}</p></a>`;
+       }
+     }
       
-//     })
-//    }
+    }
+   
 
   
 

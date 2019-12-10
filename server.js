@@ -5,6 +5,7 @@
 const express = require("express");
 const cheerio = require("cheerio");
 const axios = require("axios");
+require('dotenv').config();
 
 
 // ==============================================================================
@@ -14,6 +15,7 @@ const axios = require("axios");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+const ApiKey = process.env.API_KEY;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -27,8 +29,6 @@ app.use(express.static('public'));
 // ==============================================================================
 // SCRAPE BLOG CONTENT
 // ==============================================================================
-
-
 
 app.get("/scrape", function (req, res) {
     axios.get("https://ambassadorsforabetterworld.com/").then(function (response) {
@@ -58,6 +58,21 @@ app.get("/scrape", function (req, res) {
             console.log(result)
         });
         res.json(result)
+    });
+});
+
+// ==============================================================================
+// HIT YOUTUBE DATA API
+// ==============================================================================
+
+var API_KEY = process.env.API_KEY;
+
+app.get("/videos", function (req, res) {
+    
+    axios.get(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10`).then(function (response) {
+        console.log(response.data)
+        
+        res.json(response.data)
     });
 });
 
