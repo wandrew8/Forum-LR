@@ -143,7 +143,7 @@ address {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
-    background-image: url("../images/bosnia.jpg");
+    background-image: url("../images/ocean3.jpg");
     z-index: -1;
 }
 
@@ -361,6 +361,11 @@ hr.socket {
     top: 50%;
 }
 
+.video-caption {
+    color: #6c757d;
+    padding-top: 0.5rem;
+}
+
 /* ABOUT ME PAGE */
 
 .title-text {
@@ -494,11 +499,6 @@ iframe {
 
 .image-gallery {
     margin: 0;
-    padding: 0;
-}
-
-.video-gallery {
-    margin: 0 auto;
     padding: 0;
 }
 

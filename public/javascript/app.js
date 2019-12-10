@@ -52,13 +52,12 @@ function displayCards(result) {
     }
 }
 
-/* init Jarallax */
+/* Initiate Jarallax */
 jarallax(document.querySelectorAll('.jarallax'));
 
 jarallax(document.querySelectorAll('.jarallax-keep-img'), {
     keepImg: true,
 });
-
 jarallax(document.querySelectorAll('.jarallax'), {
   speed: 0.2
 });
@@ -72,35 +71,36 @@ $(window).scroll(function() {
   }
 });
 
-// function getVideos() {
-//     $.ajax({
-//       url: "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA6wZLmmeTTmwU8mKtb3xg0SpC-GMxcFng&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10",
-//       method: "GET"
-//     }).then(function (response) {
-//       console.log("response", response)
-//       let num = 6;
-//       for (let i = 0; i < response.items.length; i++) {
+//  function getVideos() {
+//      $.ajax({
+//        url: "https://www.googleapis.com/youtube/v3/search?key=AIzaSyB7qkBpEzj9VEipRZxAxu-JIgMsqgN8evc&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10",
+//        method: "GET"
+//      }).then(function (response) {
+//        console.log("response", response)
+//        let num = 6;
+//        for (let i = 0; i < response.items.length; i++) {
         
-//         var videoID = response.items[i].id.videoId;
-//         var videoImage = response.items[i].snippet.thumbnails.high.url
+//          var videoID = response.items[i].id.videoId;
+//          var videoImage = response.items[i].snippet.thumbnails.high.url
+//          var description = response.items[i].snippet.title.toUpperCase();
         
-//         if (typeof videoID === "undefined") {
-//           console.log(`video ${i} is undefined`)
-//           i++;
-//         } else {
+//          if (typeof videoID === "undefined") {
+//            console.log(`video ${i} is undefined`)
+//            i++;
+//          } else {
         
-//         console.log("videoId", videoID)
+//          console.log("videoId", videoID)
         
-//         let videoContainer = document.querySelector("#videoContainer");
+//          let videoContainer = document.querySelector("#videoContainer");
         
-//         videoContainer.innerHTML += `<a href="https://www.youtube.com/embed/${videoID}" data-toggle="lightbox" data-gallery="videoGallery" class="col-md-4"><img src="${videoImage}" class="img-fluid rounded"></a>`;
-//       }
-//     }
+//          videoContainer.innerHTML += `<a href="https://www.youtube.com/embed/${videoID}" data-toggle="lightbox" data-gallery="videoGallery" class="col-md-4"><img src="${videoImage}" class="img-fluid rounded"><p class="video-caption">${description}</p></a>`;
+//        }
+//      }
       
 //     })
-//   }
+//    }
 
   
-   
+
   
    
