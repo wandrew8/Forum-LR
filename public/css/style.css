@@ -106,9 +106,8 @@ address {
 
 .home-photos {
     margin: 1rem auto 0rem auto;
-    height: 75px;
     width: auto;
-    max-width: 300px;
+    max-height: 100px;
 }
 
 .index-logos i {
@@ -266,6 +265,10 @@ hr.socket {
 
 .card-body {
     margin-top: 1rem;
+}
+
+.card-body .card-heading {
+    font-weight: 300!important;
 }
 
 .card-rule {
@@ -521,13 +524,36 @@ iframe {
     box-shadow: 0 8px 6px -6px #999;
 }
 
-.signature {
+.logo {
     width: 100%;
     max-width: 300px;
     margin: 2rem 0rem;
 }
 
+.head-logo {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.logo2 {
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto;
+}
+
+.main-logo {
+    width: 100%;
+    max-width: 300px;
+    margin: -1rem auto 1rem auto;
+}
+
 /* EDI PAGE */
+
+.table-responsive {
+    width: 90%;
+    margin: 2rem auto;
+}
 
 /* MEDIA QUERIES */
 

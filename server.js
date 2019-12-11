@@ -64,15 +64,15 @@ app.get("/scrape", function (req, res) {
 // HIT YOUTUBE DATA API
 // ==============================================================================
 
-var API_KEY = process.env.API_KEY;
+// var API_KEY = process.env.API_KEY;
 
-app.get("/videos", function (req, res) {
+// app.get("/videos", function (req, res) {
     
-    axios.get(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10`).then(function (response) {
-        console.log(response.data)
-        res.json(response.data)
-    });
-});
+//     axios.get(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCvlQuIexbcHyGqaWAlEV9pg&part=snippet,id&order=date&maxResults=10`).then(function (response) {
+//         console.log(response.data)
+//         res.json(response.data)
+//     });
+// });
 
 
 // =============================================================================
