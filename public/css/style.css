@@ -527,18 +527,21 @@ iframe {
 .logo {
     width: 100%;
     max-width: 300px;
+    max-height: 200px;
     margin: 2rem 0rem;
 }
 
 .head-logo {
     width: 100%;
     max-width: 300px;
+    max-height: 200px;
     margin: 2rem 0rem 0rem 0rem;
 }
 
 .logo2 {
     width: 100%;
     max-width: 200px;
+    max-height: 200px;
     margin: 2rem auto;
 }
 
