@@ -543,6 +543,7 @@ iframe {
     max-width: 200px;
     height: auto;
     margin: 2rem auto;
+    display: inherit;
 }
 
 .main-logo {
