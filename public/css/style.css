@@ -366,7 +366,9 @@ hr.socket {
 
 .video-caption {
     color: #6c757d;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
+    height: 7rem;
+    overflow: auto;
 }
 
 /* ABOUT ME PAGE */
